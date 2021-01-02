@@ -1,0 +1,13 @@
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.exe
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.deps.json
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.runtimeconfig.json
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.runtimeconfig.dev.json
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.dll
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\bin\Debug\netcoreapp3.1\ProblemSolving.pdb
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.dll
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.pdb
+C:\Users\user\Documents\GitHub\git-tutorial\ProblemSolving\ProblemSolving\obj\Debug\netcoreapp3.1\ProblemSolving.genruntimeconfig.cache
