@@ -1,0 +1,6 @@
+/.vs
+.DS_Store
+/ProblemSolving/bin/
+/ProblemSolving/obj/
+/ProblemSolving.Test/obj/
+/ProblemSolving.Test/bin/
