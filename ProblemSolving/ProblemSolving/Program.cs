@@ -5,41 +5,39 @@ namespace ProblemSolving
     class Program
     {
 
-        //static void Fibonacci(int a)
-        //{
-            
-           
-        //}
-        static void Main(string[] args)
+        //Method for Fibonacci sequence
+        static void Fibonacci()
         {
-            Console.WriteLine("please enter your nubmer...");
             int input1 = int.Parse(Console.ReadLine());
-            int a = 0;
-            int b = 1;
-            int c;
-            
-            for (int i = 0;; i++)
-            {
-                c = a + b;
-                a = c - a;
-                b = c;
+            int input = 0;
+            int input2 = 1;
+            int result;
 
-                if (input1 == c)
+            for (int i = 0; ; i++)
+            {
+                result = input + input2;
+                input = result - input;
+                input2 = result;
+
+                //inserted while loop instead of if else statement
+                while ((input1 == result) && (input1 < result))
                 {
                     Console.WriteLine("Fibonacci");
                     break;
                 }
-                else if(input1<c)
-                {
-                    Console.WriteLine("не фибоначчи");
-                    break;
-                }
-              
+
             }
-            
+
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please enter your nubmer...");
+            //Calling Fibonacci method
+            Fibonacci();
 
         }
 
     }
-    }
+
+}
 
