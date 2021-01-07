@@ -1,6 +1,11 @@
+/.vscode
 /.vs
 .DS_Store
-/ProblemSolving/bin/
-/ProblemSolving/obj/
-/ProblemSolving.Test/obj/
-/ProblemSolving.Test/bin/
+/ProblemSolving.Core/.vs/
+/ProblemSolving.Core/.vscode/
+/ProblemSolving.Tests/.vs/
+/ProblemSolving.Tests/.vscode/
+/ProblemSolving.Core/bin/
+/ProblemSolving.Core/obj/
+/ProblemSolving.Tests/obj/
+/ProblemSolving.Tests/bin/
