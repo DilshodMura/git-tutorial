@@ -23,5 +23,12 @@ namespace ProblemSolving.Core
                 }
             }
         }
+
+        public int SumOfTwo(int firstInput, int secondInput)
+        {
+            //here goes the solution
+            var suminput = firstInput + secondInput;
+            return suminput;
+        }
     }
 }
