@@ -1,5 +1,6 @@
 namespace ProblemSolving.Core
 {
+   
     public class EasyTasks
     {
         public bool IsFibonacci(int inputNumber)

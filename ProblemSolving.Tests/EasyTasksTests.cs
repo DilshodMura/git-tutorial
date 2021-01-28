@@ -7,13 +7,19 @@ namespace ProblemSolving.Tests
     [TestClass]
     public class EasyTasksTests
     {
+        EasyTasks easyTasks = new EasyTasks();
+        int input; 
+        public void Initialize()
+        {
+            easyTasks.IsFibonacci(input);
+            bool isFibonacci = Convert.ToBoolean(input);
+            Assert.IsTrue(isFibonacci);
+        }
         [TestMethod]
         public void IsFibonacciHappyPath_13()
         {
-            var input = 13;
-            var easyTasks = new EasyTasks(); //creating an instance of EasyTasks
-            bool isFibonacci = easyTasks.IsFibonacci(input); //calling method using instance of EasyTasks
-            Assert.IsTrue(isFibonacci);
+            input = 13; 
+            Initialize();
         }
         [TestMethod]
         public void IsFibonacciHappyPath_55()
