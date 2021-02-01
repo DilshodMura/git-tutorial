@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace ProblemSolving.Core
 {
    
@@ -30,13 +33,8 @@ namespace ProblemSolving.Core
             return firstInput + secondInput;
         }
 
-        //foreach
-        10 = 1, 2, 3, 4 ... 10
-        //for(int i = 100; i--; i > 10){ array[i]; i++;}
-
-
-
-        public List<string> FooBuzz(List<int> inputNumbers){
+        public List<string> FooBuzz(List<int> inputNumbers)
+        {
             // return list of strings that would contain the result
             // divided by 2 - Foo
             // divided by 3 - Buzz
@@ -50,8 +48,29 @@ namespace ProblemSolving.Core
 
             // TODO: 
             // Solution:
-
+            string[] fooBuzz = { "Foo", "Buzz", "FooBuzz", "FooBuzzBar" };
+            List<string> optionsList = new List<string>(fooBuzz);
+            int[] myNumbers = Array.Empty<int>();
+            foreach (var item in myNumbers)
+            {
+                if (item % 2 == 0)
+                {
+                    return (List<string>)fooBuzz.GetValue(0);
+                }
+                else if (item % 3 == 0)
+                {
+                    return (List<string>)fooBuzz.GetValue(1);
+                }
+                else if (item % 2 == 0 && item % 3 == 0)
+                {
+                    return (List<string>)fooBuzz.GetValue(2);
+                }
+                else
+                {
+                    return (List<string>)fooBuzz.GetValue(3);
+                }
+            }
+            return optionsList;
         }
-
     }
 }

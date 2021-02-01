@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProblemSolving.Core;
 using System;
+using System.Collections.Generic;
 
 namespace ProblemSolving.Tests
 {
@@ -17,7 +18,7 @@ namespace ProblemSolving.Tests
             _easyTasks = new EasyTasks();
             //method level
         }
-
+        #region "Fibonacci"
         [TestMethod]
         public void IsFibonacciHappyPath_13()
         {
@@ -65,7 +66,9 @@ namespace ProblemSolving.Tests
             bool isFibonacci = _easyTasks.IsFibonacci(input); //calling method using instance of EasyTasks
             Assert.IsFalse(isFibonacci);
         }
+        #endregion
 
+        #region "InputSum"
         [TestMethod]
         public void IsSuminputHappyPath()
         {
@@ -120,5 +123,17 @@ namespace ProblemSolving.Tests
             int failPath = _easyTasks.SumOfTwo(presetValueOne, presentValueTwo);
             Assert.AreNotEqual(25, failPath);
         }
+        #endregion
+
+        #region"FooBuzz"
+        [TestMethod]
+        public void IsInputHappyPath()
+        {
+            List<int> inputNumbers = new List<int>() { 1,2,3,4,5,6,7,8,9,10};
+            List<string> output = _easyTasks.FooBuzz(inputNumbers);
+                       
+        }
+
+        #endregion
     }
 }
