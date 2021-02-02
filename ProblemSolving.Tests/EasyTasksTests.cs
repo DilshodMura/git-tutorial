@@ -127,11 +127,12 @@ namespace ProblemSolving.Tests
 
         #region"FooBuzz"
         [TestMethod]
-        public void IsInputHappyPath()
+        public void IsInputHappyPath(List<string> resultFooBuzz)
         {
-            List<int> inputNumbers = new List<int>() { 1,2,3,4,5,6,7,8,9,10};
-            List<string> output = _easyTasks.FooBuzz(inputNumbers);
-                       
+            List<int> inputNumbers = new List<int>() { 1,2,3,4,5};
+            resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string> () {"FooBuzzBar","Foo","Buzz","Foo","FooBuzzBar" };
+            Assert.AreEqual(expected, resultFooBuzz);           
         }
 
         #endregion

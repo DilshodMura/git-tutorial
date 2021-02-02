@@ -50,8 +50,7 @@ namespace ProblemSolving.Core
             // Solution:
             string[] fooBuzz = { "Foo", "Buzz", "FooBuzz", "FooBuzzBar" };
             List<string> optionsList = new List<string>(fooBuzz);
-            int[] myNumbers = Array.Empty<int>();
-            foreach (var item in myNumbers)
+            foreach (var item in inputNumbers)
             {
                 if (item % 2 == 0)
                 {
