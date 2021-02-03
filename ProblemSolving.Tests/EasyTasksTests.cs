@@ -127,14 +127,93 @@ namespace ProblemSolving.Tests
 
         #region"FooBuzz"
         [TestMethod]
-        public void IsInputHappyPath(List<string> resultFooBuzz)
+        public void IsInputHappyPath()
         {
             List<int> inputNumbers = new List<int>() { 1,2,3,4,5};
-            resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
             List<string> expected = new List<string> () {"FooBuzzBar","Foo","Buzz","Foo","FooBuzzBar" };
-            Assert.AreEqual(expected, resultFooBuzz);           
+            for (int i = 0; i < inputNumbers.Count-1; i++)
+            {
+                Assert.AreEqual(expected[i],resultFooBuzz[i]);
+            }
         }
 
+        [TestMethod]
+        public void IsInputHappyPath_2()
+        {
+            List<int> inputNumbers = new List<int>() { 6, 7, 8, 9, 10 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string>() {"FooBuzz","FooBuzzBar","Foo","Buzz","Foo" };
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
+            {
+                Assert.AreEqual(expected[i], resultFooBuzz[i]);
+            }
+        }
+
+        [TestMethod]
+        public void IsInputHappyPath_3()
+        {
+            List<int> inputNumbers = new List<int>() { 18, 999, 251, 1042, 11 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string>() { "FooBuzz", "Buzz", "FooBuzzBar", "Foo", "FooBuzzBar" };
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
+            {
+                Assert.AreEqual(expected[i], resultFooBuzz[i]);
+            }
+        }
+
+        [TestMethod]
+        public void IsInputFailPath_1()
+        {
+            List<int> inputNumbers = new List<int>() { 300, 1000, 252, 1044, 12 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string>() { "FooBuzzBar", "Buzz", "FooBuzzBar", "FooBuzzBar", "FooBuzzBar" };
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
+            {
+                Assert.AreNotEqual(expected[i], resultFooBuzz[i]);
+            }
+        }
+
+        [TestMethod]
+        public void IsInputFailPath_2()
+        {
+            List<int> inputNumbers = new List<int>() { 1, 2, 3, 4, 5 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string>() { "Foo", "FooBuzzBar", "Foo", "FooBuzzBar", "FooBuzzBar" };
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
+            {
+                Assert.AreNotEqual(expected[i], resultFooBuzz[i]);
+            }
+        }
+
+        [TestMethod]
+        public void IsInputFailPath_3()
+        {
+            List<int> inputNumbers = new List<int>() { 10, 21, 32, 43, 54 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            List<string> expected = new List<string>() { "FooBuzzBar", "FooBuzzBar", "FooBuzzBar", "Foo", "FooBuzzBar" };
+            for (int i = 0; i < inputNumbers.Count - 1; i++)
+            {
+                Assert.AreNotEqual(expected[i], resultFooBuzz[i]);
+            }
+        }
+
+        [TestMethod]
+        public void EmptyList()
+        {
+            List<int> inputNumbers = new List<int>();
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            Assert.IsTrue(resultFooBuzz.Count == 0);
+        }
+
+        [TestMethod]
+        public void IsZero()
+        {
+            List<int> inputNumbers = new List<int>() { 0 };
+            List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            ///Assert here 
+            Assert.IsNotNull(resultFooBuzz);
+        }
         #endregion
     }
 }

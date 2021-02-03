@@ -48,28 +48,27 @@ namespace ProblemSolving.Core
 
             // TODO: 
             // Solution:
-            string[] fooBuzz = { "Foo", "Buzz", "FooBuzz", "FooBuzzBar" };
-            List<string> optionsList = new List<string>(fooBuzz);
+            List<string> resultFooBuzz = new List<string>(); 
             foreach (var item in inputNumbers)
             {
-                if (item % 2 == 0)
+                if (item % 2 == 0 && item % 3 == 0)
                 {
-                    return (List<string>)fooBuzz.GetValue(0);
+                    resultFooBuzz.Add("FooBuzz");
                 }
                 else if (item % 3 == 0)
                 {
-                    return (List<string>)fooBuzz.GetValue(1);
+                    resultFooBuzz.Add("Buzz");
                 }
-                else if (item % 2 == 0 && item % 3 == 0)
+                else if (item % 2 == 0)
                 {
-                    return (List<string>)fooBuzz.GetValue(2);
+                    resultFooBuzz.Add("Foo");
                 }
                 else
                 {
-                    return (List<string>)fooBuzz.GetValue(3);
+                    resultFooBuzz.Add("FooBuzzBar");
                 }
             }
-            return optionsList;
+            return resultFooBuzz;
         }
     }
 }
