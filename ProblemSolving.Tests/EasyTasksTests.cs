@@ -203,7 +203,9 @@ namespace ProblemSolving.Tests
         {
             List<int> inputNumbers = new List<int>();
             List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
+            Assert.IsNotNull(resultFooBuzz);
             Assert.IsTrue(resultFooBuzz.Count == 0);
+            
         }
 
         [TestMethod]
@@ -211,8 +213,9 @@ namespace ProblemSolving.Tests
         {
             List<int> inputNumbers = new List<int>() { 0 };
             List<string> resultFooBuzz = _easyTasks.FooBuzz(inputNumbers);
-            ///Assert here 
             Assert.IsNotNull(resultFooBuzz);
+            Assert.IsTrue(resultFooBuzz.Count > 0);
+            
         }
         #endregion
     }
